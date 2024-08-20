@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.calculator {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Add some padding around the calculator for spacing */
+    border-radius: 10px; /* Optional: Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.display {
+    width: calc(100% - 40px); /* Adjusted for padding */
+    margin-bottom: 20px; /* More space below display */
+    padding: 15px; /* Larger padding for bigger display area */
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #e0e0e0; /* Slightly different background */
+    font-size: 1.5rem; /* Larger text */
+    text-align: right; /* Align numbers to the right */
+}
+
+.buttons button {
+    width: 60px; /* Slightly larger buttons */
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+}
+
+.buttons button:hover {
+    background-color: #e0e0e0; /* Darker background on hover */
+}
+
+.equals {
+    grid-column: span 2; /* Make the equals button wider */
+    background-color: #ffcc00; /* Distinct color for equals button */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* Organize buttons into a grid */
+    justify-content: center; /* Center grid in calculator */
+    gap: 5px; /* Space between buttons */
+}/* Continue from the existing CSS */
+.display {
+    padding: 15px; /* Larger padding for bigger display area */
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #e0e0e0; /* Slightly different background */
+    font-size: 1.5rem; /* Larger text */
+    text-align: right; /* Align numbers to the right */
+}
+
+.buttons button {
+    width: 60px; /* Slightly larger buttons */
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for number buttons */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+    display: flex; /* Enable flexbox for content alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Ensure text is centered */
+}
+
+.buttons button:hover {
+    background-color: #e0e0e0; /* Darker background on hover */
+}
+
+/* Styling for operation buttons */
+.operation {
+    background-color: #4CAF50; /* Green background for clarity */
+    color: #fff; /* White text for better visibility */
+}
+
+.equals {
+    grid-column: span 2; /* Make the equals button wider */
+    background-color: #ffcc00; /* Distinct color for equals button */
+    color: #000; /* Black text for contrast */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* Organize buttons into a grid */
+    gap: 5px; /* Space between buttons */
+}/* Number buttons */
+.buttons button {
+    background-color: #f2f2f2; /* Light grey */
+    color: #333; /* Darker text for better readability */
+}
+
+/* Operation buttons */
+.operation {
+    background-color: #4a77d4; /* Changed to a blue shade */
+    color: #fff; /* Keep text white for contrast */
+}
+
+/* Equals button */
+.equals {
+    background-color: #e67e22; /* Changed to an orange shade */
+    color: #fff; /* Keep text white for contrast */
+}
+
+/* Button hover effect - applies to all buttons */
+.buttons button:hover {
+    opacity: 0.8; /* Slightly transparent on hover for a subtle effect */
+}
