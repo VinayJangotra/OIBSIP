@@ -1,0 +1,373 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    color: #333;
+}
+
+header {
+    background: #6a82fb; /* Updated color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #dde1e7;
+}
+
+.intro, .about-section, .skills-section, .projects-section, .resume-section, .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-content, .skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add a hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .about-content, .skills-list {
+        flex-direction: column;
+    }
+}
+
+/* Updated Color Scheme */
+:root {
+    --primary-color: #4a00e0; /* Vibrant Purple */
+    --secondary-color: #8e2de2; /* Soft Purple */
+    --accent-color: #f8f8f8; /* Off-white */
+    --text-color: #333; /* Dark Grey */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+.skills-list li {
+    margin: 10px 20px;
+    font-size: 1.2em;
+    animation: fadeInUp 3s;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    max-width: 300px;
+    margin: 20px;
+    animation: fadeInUp 2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    animation: fadeInUp 3s;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Enhanced Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .about-content, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+}
+.skills-section {
+    border-radius: 1cm;
+    padding: 50px;
+    background-color: #171414;
+    color: #f05454; /* Updated to a softer red for better readability */
+    box-shadow: 5px 5px #f05454;
+    animation: fadeIn 1s ease-out;
+}
+
+.skills-list {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.skills-list li {
+     margin-bottom: 20px; /* Adds more space between list items */
+    color: #4a00e0; /* Changes text color to a vibrant purple */
+    animation-delay: 0.2s; /* Keeps existing animation delay */
+    animation-fill-mode: forwards; 
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Animation delay for each list item */
+.skills-list li:nth-child(1) { animation-delay: 0.2s; }
+.skills-list li:nth-child(2) { animation-delay: 0.4s; }
+.skills-list li:nth-child(3) { animation-delay: 0.6s; }
+.skills-list li:nth-child(4) { animation-delay: 0.8s; }
+.skills-list li:nth-child(5) { animation-delay: 1s; }
+.skills-list li:nth-child(6) { animation-delay: 1.2s; }
+
+/* Ensure elements are visible after animation */
+.skills-list li { animation-fill-mode: forwards; }
+.projects-section {
+    padding: 50px;
+    animation: fadeIn 1s ease-out;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    border-radius: 1cm;
+    padding: 20px;
+    background-color: #2a2a72; /* Changed to a deep blue */
+    color: #fff; /* Text color changed to white for better contrast */
+    box-shadow: 3px 3px #f05454; /* Soft red shadow for depth */
+    margin: 10px;
+    width: calc(33% - 20px); /* Adjust width for 3 items per row with spacing */
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 5px 5px #f05454;
+}
+
+.project-item img {
+    width: 100%; /* Ensure images fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Soften the image edges */
+}
+
+.project-item a {
+    color: #f05454; /* Soft red color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.resume-section {
+    border-radius: 20px; /* Soften the border-radius for a more modern look */
+    padding: 50px;
+    background-color: #292929; /* Darker shade for a sleek appearance */
+    color: #fff; /* Change text color to white for better readability */
+    box-shadow: 5px 5px 10px #f05454; /* Enhance shadow for depth */
+    margin: 2rem auto; /* Center the section with automatic margins */
+    width: 60%; /* Adjust width for better layout control */
+    animation: fadeInUp 1s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f05454; /* Soft red for the button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d94343; /* Darken button on hover for interaction feedback */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contact-section {
+    border-radius: 10px; /* More subtle border-radius */
+    padding: 50px;
+    background-color: #292929; /* Darker shade for a sleek appearance */
+    color: #f0f0f0; /* Lighter text color for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin: 20px auto; /* Center the section */
+    width: 80%; /* Adjust width for layout */
+    animation: fadeIn 1s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #171414; /* Dark background for footer */
+    color: #f0f0f0; /* Light text color for contrast */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.resume-section, .contact-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Sticky Navigation Bar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Adjust other elements for dark mode as needed */
+.dark-mode nav,
+.dark-mode .resume-section,
+.dark-mode .contact-section {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
